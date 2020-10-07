@@ -1,4 +1,72 @@
-@import 'styles/colors.scss';
-
 $breakpoint-mobile: 767px;
 $breakpoint-desktop: 768px;
+
+.lds-dual-ring {
+    display: inline-block;
+}
+
+.lds-dual-ring:after {
+    content: ' ';
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin: 1px;
+    border-radius: 50%;
+    animation: lds-dual-ring 0.7s linear infinite;
+    border: 2px solid black;
+    border-color: black transparent black transparent;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .header {
+        font-size: 32px;
+    }
+
+    .sub-header {
+        font-size: 24px;
+    }
+
+    .small-sub-header {
+        font-size: 18px;
+    }
+
+    .paragraph-text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .header {
+        font-size: 32px;
+    }
+
+    .sub-header {
+        font-size: 24px;
+    }
+
+    .small-sub-header {
+        font-size: 18px;
+    }
+
+    .paragraph-text {
+        font-size: 16px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .italicize {
+        font-style: italic;
+    }
+}

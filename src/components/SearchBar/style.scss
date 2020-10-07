@@ -1,0 +1,15 @@
+@import '`~styles/global.scss';
+
+@media (max-width: $breakpoint-mobile) {
+    .search-container {
+        width: 100%;
+        margin: 0 auto 8px;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .search-container {
+        width: 500px;
+        margin: 0 auto 8px;
+    }
+}

@@ -1,0 +1,74 @@
+@import '`~styles/global.scss';
+@import '~styles/colors.scss';
+
+@media (max-width: $breakpoint-mobile) {
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .list-actions {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+
+            .action-item {
+                display: flex;
+                justify-content: space-between;
+                min-width: 40px;
+                margin-left: 8px;
+                cursor: pointer;
+
+                >* {
+                    margin: 0px 4px;
+                }
+            }
+        }
+
+        .loader {
+            margin: 64px 0px;
+        }
+
+        .help-text {
+            margin-top: 32px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+
+        .list-actions {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+
+            .action-item {
+                display: flex;
+                justify-content: space-between;
+                min-width: 40px;
+                margin-left: 8px;
+                cursor: pointer;
+
+                >* {
+                    margin: 0px 4px;
+                }
+            }
+        }
+
+        .loader {
+            margin: 64px 0px;
+        }
+
+        .help-text {
+            margin-top: 32px;
+        }
+    }
+}

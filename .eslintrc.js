@@ -16,6 +16,7 @@ module.exports = {
     },
   },
   rules: {
+    'object-property-newline': 1,
     'arrow-body-style': [2, 'as-needed'],
     'react/jsx-props-no-spreading': 0,
     'class-methods-use-this': 0,
@@ -80,7 +81,7 @@ module.exports = {
       webpack: {
         config: {
           resolve: {
-            modules: ['node_modules'],
+            modules: ['node_modules', 'src'],
           },
         },
       },

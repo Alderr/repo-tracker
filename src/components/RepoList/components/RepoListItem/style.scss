@@ -32,6 +32,10 @@
             margin-bottom: 24px;
             box-shadow: 2px 2px 6px $light-gray;
 
+            &:hover .item-title {
+                text-decoration: underline;
+            }
+
             .new-marker {
                 position: absolute;
                 top: 5%;
@@ -147,6 +151,10 @@
             width: 100%;
             margin-bottom: 24px;
             box-shadow: 2px 2px 6px $light-gray;
+
+            &:hover .item-title {
+                text-decoration: underline;
+            }
 
             .new-marker {
                 position: absolute;

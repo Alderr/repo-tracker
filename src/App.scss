@@ -1,0 +1,52 @@
+@import '`~styles/global.scss';
+@import '~styles/colors.scss';
+
+@media (max-width: $breakpoint-mobile) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .app {
+    display: flex;
+    align-items: center;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header {
+    color: $black;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+
+  body {
+    overflow-y: scroll;
+  }
+
+  .app {
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header {
+    color: $black;
+    margin-bottom: 32px;
+  }
+
+  .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    margin: 0px 0px 16px;
+    border: 1px solid $red;
+    background-color: $light-red;
+    border-radius: 6px;
+  }
+}

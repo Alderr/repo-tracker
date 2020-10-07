@@ -41,8 +41,6 @@ export default function RepoListItem(props) {
         setReleaseOptions(options);
       } catch (e) {
         setReleaseOptions([]);
-
-        console.log('fetchCurrRepoReleases -> e', e);
       }
     }
 

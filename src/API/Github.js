@@ -1,11 +1,9 @@
 import { Octokit } from '@octokit/rest';
 const octokit = new Octokit();
 
-export function searchRepos({ sort, order, term }) {
+export function searchRepos({ term }) {
   return octokit.search.repos({
     q: term,
-    sort,
-    order,
   });
 }
 
@@ -15,4 +13,8 @@ export function getRepo({ owner, repo }) {
 
 export function listReleases({ owner, repo }) {
   return octokit.repos.listReleases({ owner, repo });
+}
+
+export function getLatestRelease({ owner, repo }) {
+  return octokit.repos.getLatestRelease({ owner, repo });
 }

@@ -1,5 +1,12 @@
+@import '`~styles/fonts.scss';
+
 $breakpoint-mobile: 767px;
 $breakpoint-desktop: 768px;
+
+html,
+body {
+    font-family: 'Nunito', Arial;
+}
 
 .lds-dual-ring {
     display: inline-block;
@@ -30,36 +37,44 @@ $breakpoint-desktop: 768px;
 @media (max-width: $breakpoint-mobile) {
     .header {
         font-size: 32px;
+        font-family: 'PressStart', Arial;
     }
 
     .sub-header {
         font-size: 24px;
+        font-family: 'Nunito', Arial;
     }
 
     .small-sub-header {
         font-size: 18px;
+        font-family: 'Nunito', Arial;
     }
 
     .paragraph-text {
         font-size: 16px;
+        font-family: 'Nunito', Arial;
     }
 }
 
 @media (min-width: $breakpoint-desktop) {
     .header {
         font-size: 32px;
+        font-family: 'PressStart', Arial;
     }
 
     .sub-header {
         font-size: 24px;
+        font-family: 'Nunito', Arial;
     }
 
     .small-sub-header {
         font-size: 18px;
+        font-family: 'Nunito', Arial;
     }
 
     .paragraph-text {
         font-size: 16px;
+        font-family: 'Nunito', Arial;
     }
 
     .bold {

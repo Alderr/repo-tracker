@@ -6,7 +6,8 @@
 - Read information regarding recent releases by clicking your repos.
 
 ## How To Run
-
-`npm install`
-`npm start`
+ 
+ `npm install`
+ 
+ `npm start`
 
